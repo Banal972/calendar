@@ -1,0 +1,66 @@
+
+._main {
+    height: 100%; display: flex; align-items: center; justify-content: center;
+
+    ._login {
+
+        width: 250px; border: 1px solid #ccc; padding: 25/20*1rem; border-radius: 5px;
+
+        h1 {
+            text-align: center; margin-bottom: 25/20*1rem; font-weight: bold;
+        }
+
+        form {
+            input {
+                display: block; width: 100%; height: 35/20*1rem; border: 1px solid #ccc; padding: 0 0.5em; border-radius: 5px;
+                + input {
+                    margin-top: 5px;
+                }
+            }
+            button {
+                width: 100%; height: 2rem; background: #000; color: #fff; font-size: 14/20*1rem; text-align: center; margin-top: 15px; border-radius: 5px;
+            }
+        }
+
+        .btn_list {
+            margin-top: 25px;
+            button {
+                display: block; text-align: center; width: 100%; border-radius: 5px; height: 2rem;
+                + button {
+                    margin-top: 5px;
+                }
+                img {
+                    max-width: 130px; vertical-align: middle;
+                }
+                &.naver {
+                    background: #03C75A;
+                }
+                &.kakao {
+                    background: #FEE500;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+// 다크모드
+.__darkmod {
+    position: fixed; 
+    bottom: 2.5%; 
+    right: 2.5%; 
+    background: #000000e5; 
+    border: 1px solid #000000e5;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 1000px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 1rem;
+}
